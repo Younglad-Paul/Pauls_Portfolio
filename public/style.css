@@ -2,7 +2,12 @@
     margin:0;
     padding:0;
     font-family:"Poppins", sans-serif;
+    scroll-behavior: smooth;
     
+}
+a{
+    text-decoration: none;
+    color:#fff
 }
 :root{
     --bgbody: #f0f0f0;
@@ -15,11 +20,54 @@
 body{
     background: var(--bgbody);
     overflow-x: hidden;
+    max-width: 100rem;
 }
 header{
     display:flex;
     line-height: 3rem;
 }
+header nav{
+    /* background:var(--bgsecondary) !important; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height: 50px;
+    position: fixed;
+    font-weight: bolder;
+    z-index: 999;
+
+}
+header nav p{
+    color:#fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding:1.5rem
+}
+header nav .container {
+    max-width: 1200px;
+    margin: 0 auto;
+} 
+header nav .container ul {
+    list-style: none;
+    display: flex;
+    margin-left: 58%;
+}
+
+header nav .container ul li {
+    margin-right: 4rem;
+    font-size: 2rem;
+}
+
+header nav .container ul li a {
+    color: white;
+    text-decoration: none;
+}
+header nav .container ul li a:hover {
+    color:var(--butonD)
+}
+
+
 header svg{
     position:absolute;
     z-index:-1;
@@ -30,80 +78,27 @@ header svg{
     /* box-shadow: var(--bgsecondary) 5px 5px 10px; */
 }
 header .header__intro{
-    margin: 10rem 0 0 20rem;
+    padding: 10rem 0 0 10rem;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-}
-header .header__intro img{
-    width:70%;
-    position:relative;
-    border-radius:0 10% 10% 10% ;
-    box-shadow: var(--bgprimary) 10px 10px 10px;
-    margin-top: -2rem;
-    transition: 2.5s ease-in-out;
-}
-header .header__intro img:hover{
-    box-shadow: var(--bgbody) 10px 10px 15px;
+    max-width: 100rem;
+    overflow: hidden;
 }
 header .header__intro  .header__text{
-    margin-top: 3rem;
+    margin-top: 10rem;
 }
-.obscure{
-    position:absolute; 
-    background:var(--bgsecondary); 
-    width:55%; 
-    height: 60vh; 
-    z-index: -1; 
-    border-radius: 100%; 
-    margin: -10rem 0 0 -25rem;
-}
-header .header__intro  .header__text nav {
-    background: var(--colorprimary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:230%;
-    height: 30px;
-    margin-left: -120%;
-    
-
-}
-
-header .header__intro .header__text nav ul {
-    list-style: none;
-    display: flex;
-    margin-left: 28%;
-}
-
-header .header__intro .header__text nav ul li {
-    margin-right: 4rem;
-    font-size: 2rem;
-}
-
-header .header__intro .header__text nav a {
-    color: white;
-    text-decoration: none;
-}
-header .header__intro .header__text nav ul li a:hover {
-    color:var(--butonD)
-}
-header .header__intro .header__text nav .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 header .header__intro .header__text h1{
     color:var(--colorprimary) !important;
-    font-size: 2rem;
-    margin: 1.2rem 0 0 -8rem ;
+    font-size: 2.5rem;
+    margin: 1.2rem 0 0 -4rem ;
 }
 header .header__intro .header__text h1 span{
     font-size: 5rem;
-    margin-top:-10rem !important;
+    /* margin-top:-10rem !important; */
 }
 header .header__intro .header__text p{
     font-size: 2rem;
-    margin: 0 0 0 -8rem ;
+    margin: 0 0 0 -4rem ;
 }
 header .header__intro .header__text div button{
     background: var(--buton);
@@ -113,7 +108,7 @@ header .header__intro .header__text div button{
     font-weight: bold;
     border:var(--buton) .2px solid;
     border-radius: 2rem;
-    margin: 1rem 0 0 -8rem ;
+    margin: 1rem 0 0 -4rem ;
     transition: 1s ease-in-out;
 
 }
@@ -122,6 +117,20 @@ header .header__intro .header__text div button:hover{
 }
 button + button{
     margin-left: .1rem !important;
+}
+header .header__intro img{
+    width:70%;
+    position:relative;
+}
+.obscure{
+    position:absolute; 
+    background:var(--bgsecondary); 
+    width:33%; 
+    height: 55vh; 
+    /* z-index: -1;  */
+    border:#ff8a04 10px solid;
+    border-radius: 100%; 
+    margin: 3rem 0 0 45rem;
 }
 
 #services{
@@ -133,17 +142,21 @@ button + button{
 }
 #services .service{
     width: 50%;
+    background: #eb7e02;
+    padding: 2rem 2rem 2rem 4rem;
+    border-radius: 0 5rem 5rem 0 ;
+    margin-left: -6rem
 }
 #services .service p{
-    color: var(--butonD);
+    color:#016306;
     font-weight: bolder;
-    font-size: 1rem;
-    margin-top: 4rem;
+    font-size: 2rem;
+    margin-top: 2.5rem;
 }
 #services .service h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bolder;
-    color:var(--bgprimary)
+    color:#fff;
 }
 #services .swiper .swiper-wrapper .swiper-slide{
     width: 50%;
@@ -173,11 +186,11 @@ button + button{
     color:#eb7e02;
     font-weight: bolder;
 }
-#about{
+/* #about{
     width: 100%;
     height:50vh;
     padding-top: 6.5rem;
-}
+} */
 /* #about svg{
     position:absolute;
     z-index: -1;
@@ -236,11 +249,12 @@ h2{
 #myworks .works{
     width:100%;
     background-color: rgba(0,0,0,80%);
+    overflow: hidden;
 }
 #myworks .works .workz{
-    width:60%;
+    width:80%;
     height: 45rem;
-    margin:0 auto;
+    margin:20px auto;
     padding: 0 auto;
     display: grid;
     overflow: hidden;
