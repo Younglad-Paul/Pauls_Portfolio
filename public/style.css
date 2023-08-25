@@ -25,6 +25,9 @@ body{
 header{
     display:flex;
     line-height: 3rem;
+    background: url(images/blob-scatter-haikei\ \(1\).svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
 }
 header nav{
     /* background:var(--bgsecondary) !important; */
@@ -51,32 +54,31 @@ header nav .container {
 header nav .container ul {
     list-style: none;
     display: flex;
-    margin-left: 48%;
+    margin-left: 52%;
 }
 
 header nav .container ul li {
-    margin-right: 4rem;
-    font-size: 2rem;
+    margin-right: -1rem;
+    font-size: 1.5rem;
 }
 
 header nav .container ul li a {
     color: white;
     text-decoration: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 header nav .container ul li a:hover {
     color:var(--butonD)
 }
-
-
-header svg{
-    position:absolute;
-    z-index:-1;
-    width:100%;
-    height:100vh;
-    /* margin-top:-3.5rem; */
-    /* border-radius:  0 0 19rem 19rem/ 0 0 5rem 5rem; */
-    /* box-shadow: var(--bgsecondary) 5px 5px 10px; */
+header nav .container ul li a p{
+    font-size: 1.5rem;
 }
+header nav .container ul li a p:hover{
+    color: var(--butonD)
+}
+
 header .header__intro{
     padding: 10rem 0 0 10rem;
     display:grid;
@@ -145,13 +147,14 @@ header .header__intro img{
     background: #eb7e02;
     padding: 2rem 2rem 2rem 4rem;
     border-radius: 0 5rem 5rem 0 ;
-    margin-left: -6rem
+    margin-left: -6rem;
 }
 #services .service p{
     color:#016306;
     font-weight: bolder;
     font-size: 2rem;
     margin-top: 2.5rem;
+    text-decoration: underline;
 }
 #services .service h1{
     font-size: 2rem;
@@ -328,6 +331,12 @@ h2{
     -webkit-appearance: none; 
     -moz-appearance: none;
 }
+.noInteraction{
+    width: 100%; 
+    height:20rem; 
+    background:transparent; 
+    position:absolute
+}
 #contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -355,4 +364,329 @@ h2{
 }
 #contact div #root{
     margin-left: -4rem;
+}
+
+@media (max-width: 768px){
+    body{
+        background: var(--bgbody);
+        overflow-x: hidden;
+        max-width: 768px;
+    }
+    header{
+        display:flex;
+        line-height: 3rem;
+        background: url(images/blob-scatter-haikei\ \(1\).svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover;
+        width:27rem;
+        overflow: hidden;
+    }
+    header nav{
+        /* background:var(--bgsecondary) !important; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:25rem;
+        height: 50px;
+        position: fixed;
+        font-weight: bolder;
+        z-index: 999;
+        overflow: hidden;
+    
+    }
+    header nav p{
+        color:#fff;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        padding:1.5rem
+    }
+    header nav .container {
+        max-width: 992px;
+        margin: 0 auto;
+    } 
+    header nav .container ul {
+        list-style: none;
+        display: flex;
+        margin-left: 1.9rem;
+    }
+    
+    header nav .container ul li {
+        margin: .5rem;
+        font-size: .9rem;
+    }
+    
+    header nav .container ul li a {
+        color: white;
+        text-decoration: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav .container ul li a:hover {
+        color:var(--butonD)
+    }
+    header nav .container ul li a p{
+        display:none
+    }
+    header .header__intro{
+        padding: 0 0 0 5rem;
+        display:block;
+        max-width: 100rem;
+        overflow: hidden;
+    }
+    header .header__intro  .header__text{
+        margin-top: 5rem;
+    }
+    header .header__intro .header__text h1{
+        color:var(--colorprimary) !important;
+        font-size: 2.5rem;
+        margin: 1.2rem 0 0 -4rem ;
+    }
+    header .header__intro .header__text h1 span{
+        font-size: 5rem;
+    }
+    header .header__intro .header__text p{
+        font-size: 2rem;
+        margin: 0 0 0 -4rem ;
+    }
+    header .header__intro .header__text div button{
+        background: var(--buton);
+        color:#fff;
+        padding: .8rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border:var(--buton) .2px solid;
+        border-radius: 2rem;
+        margin: 1rem 0 0 -4rem ;
+        transition: 1s ease-in-out;
+    
+    }
+    header .header__intro .header__text div button:hover{
+        background: var(--butonD);
+    }
+    button + button{
+        margin-left: .1rem !important;
+    }
+    header .header__intro img{
+        width:70%;
+        position:relative;
+        margin-top: 1rem;
+    }
+    .obscure{
+        position:absolute; 
+        background:var(--bgsecondary); 
+        width:11rem; 
+        height: 11rem; 
+        /* z-index: -1;  */
+        border:#ff8a04 10px solid;
+        border-radius: 100%; 
+        margin: 3rem 0 0 2rem;
+    }
+    #services{
+        width:20rem;
+        height:43vh;
+        display:block;
+        padding: 2rem 5rem 0 2rem;
+        background: #fff;
+        margin-top: -2rem;
+        overflow: hidden;
+        
+    }
+    #services .service{
+        width: 20rem;
+        background: #eb7e02;
+        padding: .1rem 2rem 2rem 6rem;
+        border-radius: 0 5rem 5rem 0 ;
+        margin-left: -6rem;
+        overflow: hidden;
+    }
+    #services .service p{
+        color:#016306;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin-top: 2.5rem;
+        text-decoration: underline;
+        overflow: hidden;
+    }
+    #services .service h1{
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color:#fff;
+        overflow: hidden;
+    }
+    #services #control{
+        overflow: scroll;
+        width:26rem;
+        height:25vh;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide{
+        width: 100%;
+        height:20rem !important;
+        padding:1rem;
+        margin:0 0 0 -2rem !important;
+        overflow: hidden;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image{
+        padding-left: 9rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image img{
+        border-radius: 100%;
+        width: 7rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption{
+        text-align: center;
+        font-weight: bold;
+        /* margin-top: 2rem; */
+        color:rgb(85, 84, 84);
+        font-size: .9rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
+        color:#eb7e02;
+        font-size: 1.2rem;
+    }
+    #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
+     
+        display:none;
+
+    }
+    #myworks{
+        margin-top:0rem;
+        background-image: url('images/Screenshot\ \(161\).png');
+        /* overflow:scroll; */
+        width:27rem;
+        height:110vh;
+        overflow: hidden;
+    }
+    h2{
+        text-align: center;
+        background:var(--bgprimary);
+        color:#fff;
+        padding: .6rem;
+    }
+    #myworks .works{
+        width:100%;
+        background-color: rgba(0,0,0,80%);
+        height:120vh
+    }
+    #myworks .works .workz{
+        width:80%;
+        height: 100vh;
+        margin:20px auto;
+        padding: 0 auto;
+        display: grid;
+        overflow:scroll;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    #myworks .works .workz .work{
+        width: 90%;
+        height: 20rem;
+        border: var(--bgprimary) 2px solid;
+        border-radius: 2rem ;
+        margin: 10px;
+        /* overflow: hidden; */
+    }
+    #myworks .works .workz .work img{
+        width:30rem;
+        height:20rem;
+        transition: 2s ease-in-out;
+        cursor:pointer;
+        
+    }
+    #myworks .works .workz .work img:hover{
+        width:32rem;
+        margin-left: -1rem;
+        margin-top: -1rem;
+        height: 21rem;
+    }
+    .work + .work{
+        margin-left: 10rem;
+    }
+    #capabilities{
+        width:27rem;
+        height:35rem;
+        /* padding: 2rem 0 2rem 2rem; */
+        /* background: #fff; */
+        overflow: hidden;
+    }
+    #capabilities form{
+        width:40rem !important;
+        display:block;
+        /* grid-template-columns: repeat(2,1fr); */
+        padding:2rem 0 2rem 1rem;
+        max-width: 90%;
+        margin-top: .2rem;
+        line-height: .5rem;
+        
+    }
+    #capabilities form label{
+        width:90%;
+        margin-top: 1rem;
+        /* height:2rem */
+    }
+    
+    #capabilities form label ul li{
+        font-size: 1rem;
+        font-weight: bold;
+        display:grid;
+        grid-template-columns: 60% 40%;
+    }
+    #capabilities form label ul li span{
+        /* margin-left: 13rem; */
+        text-align: end;
+        font-size:1.2rem;
+        color:var(--buton)
+    }
+    #capabilities form label input{
+        width:100%;
+        max-height: 1rem;
+        -webkit-appearance:button;
+        background-color: green;
+        accent-color:orange;  
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+    }
+    .noInteraction{
+        width: 100%; 
+        height:30rem; 
+        background:transparent; 
+        position:absolute;
+        margin-top: -29rem !important;
+    }
+    #contact{
+        display: block;
+        /* grid-template-columns: repeat(2, 1fr); */
+        background: #fff;
+        overflow:hidden;
+        border-radius: 3rem 2rem 0 0;
+        border-top: 2px solid var(--bgprimary);
+        width:27rem;
+        
+    }
+    #contact div img{
+        margin-left:16rem;
+        position:relative;
+        width:60%;
+        margin-top: 3rem;
+        position:relative;
+        border-radius:0 10% 10% 10% ;
+        box-shadow: var(--bgprimary) 10px 10px 10px;
+        transition: 2.5s ease-in-out;
+        display:none
+    }
+    #contact div img:hover{
+        box-shadow: var(--bgbody) 10px 10px 15px;
+    }
+    #contact div h2{
+        margin: 2rem;
+    }
+    #contact div #root{
+        margin-left: 2rem;
+    }
+    
+}
+@media (max-width: 768px){
+
+}
+@media (max-width: 600px){
+
 }
