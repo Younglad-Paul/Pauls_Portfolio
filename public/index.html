@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -26,7 +26,7 @@
             <p>Paul's Portfolio</p>
             <div class="container">
                 <ul>
-                    <li><a href="#home"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
+                    <li><a href="/"><i class="fa-solid fa-house"></i><p>Home</p></a></li>
                     <li><a href="#myworks"><i class="fa-solid fa-pen-to-square"></i><p>Projects</p></a></li>
                     <li><a href="#contact"><i class="fa-solid fa-phone"></i><p>Contact</p></a></li>
                 </ul>
@@ -36,7 +36,7 @@
         <div class="header__intro" id="home">
         <div class="header__text">
             
-            <h1>Hi, I'm <br><span> Paul Borisade</span></h1>
+            <h1>Hi, I'm <br><div> Paul Borisade</div></h1>
         <p>A Passionate Software Developer</p>
         <div>
             <button onclick="DownloadCV()">Download CV</button>
@@ -281,7 +281,7 @@
 
   function getDirection() {
     var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 992 ? 'vertical' : 'horizontal';
+    var direction = window.innerWidth <= 900 ? 'vertical' : 'horizontal';
 
     return direction;
   } 
