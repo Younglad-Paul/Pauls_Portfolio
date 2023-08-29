@@ -20,7 +20,7 @@ a{
 body{
     background: var(--bgbody);
     overflow-x: hidden;
-    max-width: 100rem;
+    max-width: 100%;
 }
 header{
     display:flex;
@@ -90,11 +90,12 @@ header .header__intro  .header__text{
     margin-top: 10rem;
 }
 header .header__intro .header__text h1{
-    color:var(--colorprimary) !important;
+    color:var(--bgsecondary) !important;
     font-size: 2.5rem;
     margin: 1.2rem 0 0 -4rem ;
 }
 header .header__intro .header__text h1 div{
+    color:var(--colorprimary) !important;
     font-size: 5rem;
     /* margin-top:-10rem !important; */
 }
@@ -147,7 +148,7 @@ header .header__intro img{
 #services .service{
     width: 50%;
     background: #eb7e02;
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 1rem 2rem 2rem 4rem;
     border-radius: 0 5rem 5rem 0 ;
     margin-left: -6rem;
 }
@@ -164,7 +165,7 @@ header .header__intro img{
     color:#fff;
 }
 #services .swiper{
-    margin-left: -4rem;
+    margin-left: -13rem;
 }
 #services .swiper .swiper-wrapper .swiper-slide{
     width: 50%;
@@ -371,11 +372,11 @@ h2{
     margin-left: -4rem;
 }
 
-@media (max-width: 0px){
+@media (max-width: 1280px){
     body{
         background: var(--bgbody);
         overflow-x: hidden;
-        max-width: 768px;
+        max-width: 100%;
     }
     header{
         display:flex;
@@ -383,41 +384,39 @@ h2{
         background: url(images/blob-scatter-haikei\ \(1\).svg);
         background-repeat: no-repeat, no-repeat;
         background-size: cover;
-        width:27rem;
-        overflow: hidden;
+        width:1280px !important;
     }
     header nav{
         /* background:var(--bgsecondary) !important; */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width:25rem;
+        width:1240px;
         height: 50px;
         position: fixed;
         font-weight: bolder;
         z-index: 999;
-        overflow: hidden;
     
     }
     header nav p{
         color:#fff;
-        font-size: 1.1rem;
+        font-size: 2.5rem;
         font-weight: bolder;
         padding:1.5rem
     }
     header nav .container {
-        max-width: 992px;
+        max-width: 1200px;
         margin: 0 auto;
     } 
     header nav .container ul {
         list-style: none;
         display: flex;
-        margin-left: 1.9rem;
+        margin-left: 32%;
     }
     
     header nav .container ul li {
-        margin: .5rem;
-        font-size: .9rem;
+        margin-right: -1rem;
+        font-size: 1.5rem;
     }
     
     header nav .container ul li a {
@@ -431,24 +430,31 @@ h2{
         color:var(--butonD)
     }
     header nav .container ul li a p{
-        display:none
+        font-size: 1.5rem;
     }
+    header nav .container ul li a p:hover{
+        color: var(--butonD)
+    }
+    
     header .header__intro{
-        padding: 0 0 0 5rem;
-        display:block;
+        padding: 10rem 0 0 6rem;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
         max-width: 100rem;
         overflow: hidden;
     }
     header .header__intro  .header__text{
-        margin-top: 5rem;
+        margin-top: 10rem;
     }
     header .header__intro .header__text h1{
-        color:var(--colorprimary) !important;
+        color:var(--bgsecondary) !important;
         font-size: 2.5rem;
         margin: 1.2rem 0 0 -4rem ;
     }
     header .header__intro .header__text h1 div{
+        color:var(--colorprimary) !important;
         font-size: 5rem;
+        /* margin-top:-10rem !important; */
     }
     header .header__intro .header__text p{
         font-size: 2rem;
@@ -458,7 +464,7 @@ h2{
         background: var(--buton);
         color:#fff;
         padding: .8rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: bold;
         border:var(--buton) .2px solid;
         border-radius: 2rem;
@@ -475,64 +481,57 @@ h2{
     header .header__intro img{
         width:70%;
         position:relative;
-        margin-top: 1rem;
     }
     .obscure{
         position:absolute; 
         background:var(--bgsecondary); 
-        width:11rem; 
-        height: 11rem; 
+        width:28%; 
+        height: 45vh; 
         /* z-index: -1;  */
         border:#ff8a04 10px solid;
         border-radius: 100%; 
-        margin: 3rem 0 0 2rem;
+        margin: 3rem 0 0 39rem;
     }
+    
     #services{
-        width:20rem;
-        height:43vh;
-        display:block;
-        padding: 2rem 5rem 0 2rem;
+        width:90%;
+        height:40vh;
+        /* display:flex; */
+        display: grid;
+        grid-template-columns: 30% 72%;
+        padding: 2rem 5rem 0 5rem;
         background: #fff;
-        margin-top: -2rem;
-        overflow: hidden;
-        
     }
     #services .service{
-        width: 20rem;
+        width: 60%;
         background: #eb7e02;
-        padding: .1rem 2rem 2rem 6rem;
+        padding: 1rem 1rem 1rem 4rem;
         border-radius: 0 5rem 5rem 0 ;
         margin-left: -6rem;
-        overflow: hidden;
+        margin-top: -2rem;
     }
     #services .service p{
         color:#016306;
         font-weight: bolder;
-        font-size: 1.5rem;
-        margin-top: 2.5rem;
+        font-size: 2rem;
+        margin-top: 2rem;
         text-decoration: underline;
-        overflow: hidden;
     }
     #services .service h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bolder;
         color:#fff;
-        overflow: hidden;
     }
-    #services #control{
-        overflow: scroll;
-        width:26rem;
-        height:25vh;
+    #services .swiper{
+        margin-left: -10rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide{
-        width: 100%;
-        height:20rem !important;
-        padding:1rem;
-        margin:0 0 0 -2rem !important;
-        overflow: hidden;
+        width: 50%;
+        margin:1.2rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image{
-        padding-left: 9rem;
+        /* background:#eb7e02; */
+        padding-left: 8rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image img{
         border-radius: 100%;
@@ -550,16 +549,13 @@ h2{
         font-size: 1.2rem;
     }
     #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
-     
-        display:none;
-
+        margin-top: 5rem;
+        color:#eb7e02;
+        font-weight: bolder;
     }
     #myworks{
-        margin-top:0rem;
+        /* margin-top:2rem; */
         background-image: url('images/Screenshot\ \(161\).png');
-        /* overflow:scroll; */
-        width:27rem;
-        height:110vh;
         overflow: hidden;
     }
     h2{
@@ -571,15 +567,15 @@ h2{
     #myworks .works{
         width:100%;
         background-color: rgba(0,0,0,80%);
-        height:120vh
+        overflow: hidden;
     }
     #myworks .works .workz{
         width:80%;
-        height: 100vh;
+        height: 45rem;
         margin:20px auto;
         padding: 0 auto;
         display: grid;
-        overflow:scroll;
+        overflow: hidden;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
     #myworks .works .workz .work{
@@ -588,7 +584,7 @@ h2{
         border: var(--bgprimary) 2px solid;
         border-radius: 2rem ;
         margin: 10px;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
     #myworks .works .workz .work img{
         width:30rem;
@@ -607,16 +603,328 @@ h2{
         margin-left: 10rem;
     }
     #capabilities{
-        width:27rem;
-        height:35rem;
+        width:100%;
+        height:24rem;
         /* padding: 2rem 0 2rem 2rem; */
         /* background: #fff; */
-        overflow: hidden;
+        
     }
     #capabilities form{
-        width:40rem !important;
-        display:block;
-        /* grid-template-columns: repeat(2,1fr); */
+        width:400rem !important;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        padding:2rem 0 2rem 10rem;
+        max-width: 90%;
+        margin-top: .2rem;
+        line-height: .5rem;
+        
+    }
+    #capabilities form label{
+        width:90%;
+        margin-top: 1rem;
+        /* height:2rem */
+    }
+    
+    #capabilities form label ul li{
+        font-size: 1rem;
+        font-weight: bold;
+        display:grid;
+        grid-template-columns: 60% 40%;
+    }
+    #capabilities form label ul li span{
+        /* margin-left: 13rem; */
+        text-align: end;
+        font-size:1.2rem;
+        color:var(--buton)
+    }
+    #capabilities form label input{
+        width:100%;
+        max-height: 1rem;
+        -webkit-appearance:button;
+        background-color: green;
+        accent-color:orange;  
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+    }
+    .noInteraction{
+        width: 100%; 
+        height:20rem; 
+        background:transparent; 
+        position:absolute
+    }
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: #fff;
+        overflow:hidden;
+        border-radius: 3rem 2rem 0 0;
+        border-top: 2px solid var(--bgprimary);
+        
+    }
+    #contact div img{
+        margin-left:5rem;
+        position:relative;
+        width:75%;
+        margin-top: 3rem;
+        position:relative;
+        border-radius:0 10% 10% 10% ;
+        box-shadow: var(--bgprimary) 10px 10px 10px;
+        transition: 2.5s ease-in-out;
+    }
+    #contact div img:hover{
+        box-shadow: var(--bgbody) 10px 10px 15px;
+    }
+    #contact div h2{
+        margin: 7rem 2rem 0 -40rem;
+    }
+    #contact div #root{
+        margin-left: -4rem;
+    } 
+}
+
+@media (max-width: 1024px){
+    body{
+        background: var(--bgbody);
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    header{
+        display:flex;
+        line-height: 3rem;
+        background: url(images/blob-scatter-haikei\ \(1\).svg);
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover;
+        width:1024px !important;
+    }
+    header nav{
+        /* background:var(--bgsecondary) !important; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:990px;
+        height: 50px;
+        position: fixed;
+        font-weight: bolder;
+        z-index: 999;
+        overflow: hidden;
+    }
+    header nav p{
+        color:#fff;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        padding:1.5rem
+    }
+    header nav .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    } 
+    header nav .container ul {
+        list-style: none;
+        display: flex;
+        margin-left: 15%;
+    }
+    
+    header nav .container ul li {
+        margin-right: -1rem;
+        font-size: 1.5rem;
+    }
+    
+    header nav .container ul li a {
+        color: white;
+        text-decoration: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav .container ul li a:hover {
+        color:var(--butonD)
+    }
+    header nav .container ul li a p{
+        font-size: 1.5rem;
+    }
+    header nav .container ul li a p:hover{
+        color: var(--butonD)
+    }
+    
+    header .header__intro{
+        padding: 0 0 0 6rem;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100rem;
+        overflow: hidden;
+    }
+    header .header__intro  .header__text{
+        margin-top: 13rem;
+    }
+    header .header__intro .header__text h1{
+        color:var(--bgsecondary) !important;
+        font-size: 2.5rem;
+        margin: 1.2rem 0 0 -4rem ;
+    }
+    header .header__intro .header__text h1 div{
+        color:var(--colorprimary) !important;
+        font-size: 4rem;
+        /* margin-top:-10rem !important; */
+    }
+    header .header__intro .header__text p{
+        font-size: 2rem;
+        margin: 0 0 0 -4rem ;
+    }
+    header .header__intro .header__text div button{
+        background: var(--buton);
+        color:#fff;
+        padding: .8rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border:var(--buton) .2px solid;
+        border-radius: 2rem;
+        margin: 1rem 0 0 -4rem ;
+        transition: 1s ease-in-out;
+    
+    }
+    header .header__intro .header__text div button:hover{
+        background: var(--butonD);
+    }
+    button + button{
+        margin-left: .1rem !important;
+    }
+    header .header__intro img{
+        margin-top:9rem;
+        width:70%;
+        position:relative;
+    }
+    .obscure{
+        position:absolute; 
+        background:var(--bgsecondary); 
+        width:28%; 
+        height: 45vh; 
+        /* z-index: -1;  */
+        border:#ff8a04 10px solid;
+        border-radius: 100%; 
+        margin: 12rem 0 0 30rem;
+    }
+    
+    #services{
+        width:865px;
+        height:58vh;
+        /* display:flex; */
+        display: grid;
+        grid-template-columns: 40% 65%;
+        padding: 2rem 5rem 0 5rem;
+        background: #fff;
+    }
+    #services .service{
+        width: 60%;
+        height:58vh;
+        background: #eb7e02;
+        padding: 1rem 1rem 1rem 4rem;
+        border-radius: 0 5rem 5rem 0 ;
+        margin-left: -6rem;
+        margin-top: -2rem;
+    }
+    #services .service p{
+        color:#016306;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-decoration: underline;
+    }
+    #services .service h1{
+        font-size: 2.2rem;
+        font-weight: bolder;
+        color:#fff;
+    }
+    #services .swiper{
+        margin-left: -10rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide{
+        width: 50%;
+        margin:1.2rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image{
+        /* background:#eb7e02; */
+        padding-left: 4rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image img{
+        border-radius: 100%;
+        width: 7rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption{
+        text-align: center;
+        font-weight: bold;
+        /* margin-top: 2rem; */
+        color:rgb(85, 84, 84);
+        font-size: .9rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
+        color:#eb7e02;
+        font-size: 1.2rem;
+    }
+    #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
+        margin-top: 5rem;
+        color:#eb7e02;
+        font-weight: bolder;
+    }
+    #myworks{
+        /* margin-top:2rem; */
+        background-image: url('images/Screenshot\ \(161\).png');
+        overflow: hidden;
+    }
+    h2{
+        text-align: center;
+        background:var(--bgprimary);
+        color:#fff;
+        padding: .6rem;
+    }
+    #myworks .works{
+        width:100%;
+        background-color: rgba(0,0,0,80%);
+        overflow: scroll;
+    }
+    #myworks .works .workz{
+        width:80%;
+        height: 45rem;
+        margin:20px auto;
+        padding: 0 auto;
+        display: grid;
+        overflow: scroll;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    #myworks .works .workz .work{
+        width: 90%;
+        height: 20rem;
+        border: var(--bgprimary) 2px solid;
+        border-radius: 2rem ;
+        margin: 10px;
+        overflow: hidden;
+    }
+    #myworks .works .workz .work img{
+        width:30rem;
+        height:20rem;
+        transition: 2s ease-in-out;
+        cursor:pointer;
+        
+    }
+    #myworks .works .workz .work img:hover{
+        width:32rem;
+        margin-left: -1rem;
+        margin-top: -1rem;
+        height: 21rem;
+    }
+    .work + .work{
+        margin-left: 10rem;
+    }
+    #capabilities{
+        width:1024px;
+        height:24rem;
+        /* padding: 2rem 0 2rem 2rem; */
+        /* background: #fff; */
+        
+    }
+    #capabilities form{
+        width:400rem !important;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
         padding:2rem 0 2rem 1rem;
         max-width: 90%;
         margin-top: .2rem;
@@ -652,49 +960,46 @@ h2{
     }
     .noInteraction{
         width: 100%; 
-        height:30rem; 
+        height:20rem; 
         background:transparent; 
-        position:absolute;
-        margin-top: -29rem !important;
+        position:absolute
     }
     #contact{
-        display: block;
-        /* grid-template-columns: repeat(2, 1fr); */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         background: #fff;
         overflow:hidden;
         border-radius: 3rem 2rem 0 0;
         border-top: 2px solid var(--bgprimary);
-        width:27rem;
         
     }
     #contact div img{
-        margin-left:16rem;
+        margin-left:1rem;
         position:relative;
-        width:60%;
+        width:85%;
         margin-top: 3rem;
         position:relative;
         border-radius:0 10% 10% 10% ;
         box-shadow: var(--bgprimary) 10px 10px 10px;
         transition: 2.5s ease-in-out;
-        display:none
     }
     #contact div img:hover{
         box-shadow: var(--bgbody) 10px 10px 15px;
     }
     #contact div h2{
-        margin: 2rem;
+        margin: 7rem 2rem 0 -40rem;
+        padding-left: 17rem;
     }
     #contact div #root{
-        margin-left: 2rem;
-    }
-    
+        margin-left: -4rem;
+    } 
 }
-@media (max-width: 768px){
+
+@media (max-width: 912px){
     body{
         background: var(--bgbody);
         overflow-x: hidden;
-        max-width: 768px !important;
-        width: 700px !important;
+        max-width: 100%;
     }
     header{
         display:flex;
@@ -702,41 +1007,430 @@ h2{
         background: url(images/blob-scatter-haikei\ \(1\).svg);
         background-repeat: no-repeat, no-repeat;
         background-size: cover;
-        width: 768px;
-        overflow: hidden;
+        width:912px !important;
     }
     header nav{
         /* background:var(--bgsecondary) !important; */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 730px !important;
+        width:880px;
         height: 50px;
         position: fixed;
         font-weight: bolder;
         z-index: 999;
         overflow: hidden;
-    
     }
     header nav p{
         color:#fff;
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-weight: bolder;
-        padding:1.5rem
+        padding:1.5rem 1.5rem 1.5rem -2rem;
     }
     header nav .container {
-        max-width: 992px;
+        max-width: 912px;
         margin: 0 auto;
     } 
     header nav .container ul {
         list-style: none;
         display: flex;
-        margin-left: 1.9rem;
+        margin-left: 15%;
     }
     
     header nav .container ul li {
-        margin: .5rem;
+        margin-right: -1rem;
         font-size: 1.5rem;
+        padding:2rem;
+    }
+    
+    header nav .container ul li a {
+        color: white;
+        text-decoration: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav .container ul li a:hover {
+        color:var(--butonD)
+    }
+    header nav .container ul li a p{
+        display:none;
+    }
+    header nav .container ul li a p:hover{
+        color: var(--butonD)
+    }
+    
+    header .header__intro{
+        padding: 0 0 0 6rem;
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100rem;
+        overflow: hidden;
+    }
+    header .header__intro  .header__text{
+        margin-top: 10rem;
+    }
+    header .header__intro .header__text h1{
+        color:var(--bgsecondary) !important;
+        font-size: 2rem;
+        margin: 1.2rem 0 0 -4rem ;
+        line-height: 4rem;
+    }
+    header .header__intro .header__text h1 div{
+        color:var(--colorprimary) !important;
+        font-size: 4rem;
+        /* margin-top:-10rem !important; */
+    }
+    header .header__intro .header__text p{
+        font-size: 1.5rem;
+        margin: 0 0 0 -4rem ;
+    }
+    header .header__intro .header__text div button{
+        background: var(--buton);
+        color:#fff;
+        padding: .8rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border:var(--buton) .2px solid;
+        border-radius: 2rem;
+        margin: 1rem 0 0 -4rem ;
+        transition: 1s ease-in-out;
+    
+    }
+    header .header__intro .header__text div button:hover{
+        background: var(--butonD);
+    }
+    button + button{
+        margin-left: .1rem !important;
+    }
+    header .header__intro img{
+        margin-top:9rem;
+        width:70%;
+        position:relative;
+    }
+    .obscure{
+        position:absolute; 
+        background:var(--bgsecondary); 
+        width:28%; 
+        height: 16vh; 
+        /* z-index: -1;  */
+        border:#ff8a04 10px solid;
+        border-radius: 100%; 
+        margin: 12rem 0 0 27rem;
+    }
+    
+    #services{
+        width:90%;
+        height:40vh;
+        /* display:flex; */
+        display: block;
+        padding: 3rem;
+        background: #fff;
+        overflow: hidden;
+        z-index: -1;
+    }
+    #services .service{
+        width: 100%;
+        height:23vh;
+        background: none;
+        padding: 1rem 1rem 1rem 4rem;
+        margin-top: -2rem 0 -10rem 0;
+    }
+    #services .service p{
+        color: var(--bgsecondary);
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-decoration: underline;
+    }
+    #services .service h1{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: var(--bgprimary);
+    }
+    #services #control{
+        width: 100%;
+        height:18vh;
+        margin-left: 0rem;
+        margin-top: -13rem;
+    }
+    #services .swiper{
+        margin-left: 0;
+        width:100%
+        
+    }
+    #services .swiper .swiper-wrapper .swiper-slide{
+        width: 35% !important;
+        margin:1.2rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image{
+        /* background:#eb7e02; */
+        padding-left: 6rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image img{
+        border-radius: 100%;
+        width: 7rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption{
+        text-align: center;
+        font-weight: bold;
+        /* margin-top: 2rem; */
+        color:rgb(85, 84, 84);
+        font-size: 1.5rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
+        color:#eb7e02;
+        font-size: 2rem;
+    }
+    #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
+        margin-top: 5rem;
+        color:#eb7e02;
+        font-weight: bolder;
+    }
+    #myworks{
+        /* margin-top:2rem; */
+        background-image: url('images/Screenshot\ \(161\).png');
+        overflow: hidden;
+    }
+    h2{
+        text-align: center;
+        background:var(--bgprimary);
+        color:#fff;
+        padding: .6rem;
+    }
+    #myworks .works{
+        width:100%;
+        background-color: rgba(0,0,0,80%);
+        overflow: scroll;
+    }
+    #myworks .works .workz{
+        width:80%;
+        height: 45rem;
+        margin:20px auto;
+        padding: 0 auto;
+        display: grid;
+        overflow: scroll;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    #myworks .works .workz .work{
+        width: 90%;
+        height: 20rem;
+        border: var(--bgprimary) 2px solid;
+        border-radius: 2rem ;
+        margin: 10px;
+        overflow: hidden;
+    }
+    #myworks .works .workz .work img{
+        width:30rem;
+        height:20rem;
+        transition: 2s ease-in-out;
+        cursor:pointer;
+        
+    }
+    #myworks .works .workz .work img:hover{
+        width:32rem;
+        margin-left: -1rem;
+        margin-top: -1rem;
+        height: 21rem;
+    }
+    .work + .work{
+        margin-left: 10rem;
+    }
+    #capabilities{
+        width:912px;
+        height:24rem;
+        /* padding: 2rem 0 2rem 2rem; */
+        /* background: #fff; */
+        
+    }
+    #capabilities form{
+        width:400rem !important;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        padding:2rem 0 2rem 1rem;
+        max-width: 90%;
+        margin-top: .2rem;
+        line-height: .5rem;
+        
+    }
+    #capabilities form label{
+        width:90%;
+        margin-top: 1rem;
+        /* height:2rem */
+    }
+    
+    #capabilities form label ul li{
+        font-size: 1rem;
+        font-weight: bold;
+        display:grid;
+        grid-template-columns: 60% 40%;
+    }
+    #capabilities form label ul li span{
+        text-align: end;
+        font-size:1.2rem;
+        color:var(--buton)
+    }
+    #capabilities form label input{
+        width:100%;
+        max-height: 1rem;
+        -webkit-appearance:button;
+        background-color: green;
+        accent-color:orange;  
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+    }
+    .noInteraction{
+        width: 100%; 
+        height:20rem; 
+        background:transparent; 
+        position:absolute
+    }
+    #contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: #fff;
+        overflow:hidden;
+        border-radius: 3rem 2rem 0 0;
+        border-top: 2px solid var(--bgprimary);
+        
+    }
+    #contact div img{
+        margin-left:1rem;
+        position:relative;
+        width:85%;
+        margin-top: 3rem;
+        position:relative;
+        border-radius:0 10% 10% 10% ;
+        box-shadow: var(--bgprimary) 10px 10px 10px;
+        transition: 2.5s ease-in-out;
+    }
+    #contact div img:hover{
+        box-shadow: var(--bgbody) 10px 10px 15px;
+    }
+    #contact div h2{
+        margin: 7rem 2rem 0 -40rem;
+        padding-left: 17rem;
+    }
+    #contact div #root{
+        margin-left: -4rem;
+    } 
+    
+}
+
+@media (max-width:820px){
+    header{
+        width:820px !important;
+    }
+    header nav{
+        width:780px
+    }
+    header .header__intro .header__text div button{
+        margin-top: -2rem;
+    }
+    .obscure{
+        width: 25%;
+        margin: 12rem 0 0 23rem;
+    }
+    #services{
+        height:63vh;
+    }
+    #services #control{
+        margin-top: -11rem;
+    }
+    #capabilities{
+        width:820px;
+    }
+    #contact{
+        display:block !important;
+    }
+    #contact div img{
+        display:none !important;
+    }
+    #contact div h2{
+        margin: 2rem 1rem 2rem 1rem;
+        padding:0;
+    }
+    #contact div #root{
+        margin-left:0;
+    }
+}
+@media (max-width:768px){
+    header{
+        width: 768px !important;
+    }
+    header nav{
+        width: 730px
+    }
+    header .header__intro  .header__text{
+        margin-top: 8rem;
+    }
+    header .header__intro img{
+        margin-top: 10rem;
+        width:80%;
+    }
+    .obscure{
+        margin: 14rem 0 0 23rem;
+    }
+    #services{
+        width:87%;
+        height: 49vh;
+    }
+    #services #control{
+        margin-top: -9rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
+        font-size: 1.5rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption{
+        font-size: 1rem;
+    }
+    #myworks .works .workz .work img{
+        width:35rem;
+    }
+    #myworks .works .workz .work img:hover{
+        width:40rem;
+    }
+    #capabilities{
+        width:768px;
+    }
+    #capabilities form label ul li{
+        font-size: .9rem;
+        font-weight: bold;
+        grid-template-columns: 70% 30%;
+    }
+    #capabilities form label ul li span{
+        /* margin-left: 13rem; */
+        text-align: end;
+        font-size:.9rem;
+    }
+}
+@media (max-width:540px){
+    header{
+        width: 540px !important;
+    }
+    header nav{
+        width: 500px !important;
+    }
+    header nav p{
+        color:#fff;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        padding:1rem;
+        margin-left:-1rem;
+    }
+    header nav .container {
+        max-width: 540px;
+        margin: 0 auto;
+    } 
+    header nav .container ul {
+        list-style: none;
+        display: flex;
+        margin-left: 25%;
+    }
+    
+    header nav .container ul li {
+        padding:1rem;
+        font-size: 1rem;
     }
     
     header nav .container ul li a {
@@ -762,13 +1456,12 @@ h2{
         margin-top: 5rem;
     }
     header .header__intro .header__text h1{
-        color:var(--colorprimary) !important;
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin: 1.2rem 0 0 -4rem ;
     }
     header .header__intro .header__text h1 div{
-        font-size: 8.5rem;
-        line-height: 8rem;
+        font-size: 5rem;
+        line-height: 5rem;
     }
     header .header__intro .header__text p{
         font-size: 2.5rem;
@@ -778,7 +1471,7 @@ h2{
         background: var(--buton);
         color:#fff;
         padding: .8rem;
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: bold;
         border:var(--buton) .2px solid;
         border-radius: 2rem;
@@ -798,76 +1491,63 @@ h2{
         margin-top: 1rem;
     }
     .obscure{
-        position:absolute; 
-        background:var(--bgsecondary); 
-        width:25rem; 
-        height: 25rem; 
-        /* z-index: -1;  */
-        border:#ff8a04 10px solid;
-        border-radius: 100%; 
+        width:15rem; 
+        height: 15rem; 
         margin: 3rem 0 0 2rem;
     }
     #services{
-        width:655px !important;
+        width:430px !important;
         height:45vh;
         display:block;
         padding: 2rem 5rem 0 2rem;
         background: #fff;
-        margin-top: -3.4rem;
+        margin-top: -1.2rem;
         overflow: hidden;
         
     }
     #services .service{
-        width: 40rem;
-        background: #eb7e02;
+        padding: .1rem 2rem 2rem 6rem;
+        
+        /* width: 40rem;
         padding: .1rem 2rem 2rem 6rem;
         border-radius: 0 5rem 5rem 0 ;
         margin-left: -6rem;
-        overflow: hidden;
+        overflow: hidden; */
     }
     #services .service p{
-        color:#016306;
-        font-weight: bolder;
-        font-size: 2rem;
-        margin-top: 2.5rem;
-        text-decoration: underline;
-        overflow: hidden;
+        font-size: 1.2rem !important;
     }
     #services .service h1{
-        font-size: 2.5rem;
-        font-weight: bolder;
-        color:#fff;
-        overflow: hidden;
+        font-size: 1.2rem !important;
     }
     #services #control{
         overflow: scroll;
-        width:45rem;
-        height:25vh;
+        width:115%;
+        height:40vh;
+        margin-top: -8rem;
+    }
+    #services .swiper{
+        margin-left: -2rem !important;
     }
     #services .swiper .swiper-wrapper .swiper-slide{
-        width: 37rem;
+        width: 80% !important;
         height:20rem !important;
         padding:1rem;
         margin:0 0 0 3rem !important;
         overflow: hidden;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image{
-        padding-left: 15rem;
+        padding-left: 9rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image img{
         border-radius: 100%;
         width: 7rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .caption{
-        text-align: center;
-        font-weight: bold;
-        /* margin-top: 2rem; */
-        color:rgb(85, 84, 84);
-        font-size: .9rem;
+        font-size: 1rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .caption h1{
-        color:#eb7e02;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
      
@@ -875,11 +1555,7 @@ h2{
 
     }
     #myworks{
-        margin-top:0;
-        background-image: url('images/Screenshot\ \(161\).png');
-        width:760px;
         height:110vh;
-        overflow: hidden;
     }
     h2{
         text-align: center;
@@ -926,16 +1602,13 @@ h2{
         margin-left: 10rem;
     }
     #capabilities{
-        width:760px;
+        width:540px;
         height:35rem;
-        /* padding: 2rem 0 2rem 2rem; */
-        /* background: #fff; */
         overflow: hidden;
     }
     #capabilities form{
         width:40rem !important;
         display:block;
-        /* grid-template-columns: repeat(2,1fr); */
         padding:2rem 0 2rem 1rem;
         max-width: 90%;
         margin-top: .2rem;
@@ -945,7 +1618,6 @@ h2{
     #capabilities form label{
         width:90%;
         margin-top: 1rem;
-        /* height:2rem */
     }
     
     #capabilities form label ul li{
@@ -955,20 +1627,11 @@ h2{
         grid-template-columns: 60% 40%;
     }
     #capabilities form label ul li span{
-        /* margin-left: 13rem; */
         text-align: end;
         font-size:1.2rem;
         color:var(--buton)
     }
-    #capabilities form label input{
-        width:100%;
-        max-height: 1rem;
-        -webkit-appearance:button;
-        background-color: green;
-        accent-color:orange;  
-        -webkit-appearance: none; 
-        -moz-appearance: none;
-    }
+  
     .noInteraction{
         width: 100%; 
         height:30rem; 
@@ -977,289 +1640,90 @@ h2{
         margin-top: -29rem !important;
     }
     #contact{
-        display: block;
-        /* grid-template-columns: repeat(2, 1fr); */
-        background: #fff;
-        overflow:hidden;
-        border-radius: 3rem 2rem 0 0;
-        border-top: 2px solid var(--bgprimary);
-        width:760px;
+        width:540px;
         
-    }
-    #contact div img{
-        margin-left:16rem;
-        position:relative;
-        width:60%;
-        margin-top: 3rem;
-        position:relative;
-        border-radius:0 10% 10% 10% ;
-        box-shadow: var(--bgprimary) 10px 10px 10px;
-        transition: 2.5s ease-in-out;
-        display:none
-    }
-    #contact div img:hover{
-        box-shadow: var(--bgbody) 10px 10px 15px;
     }
     #contact div h2{
         margin: 2rem;
     }
-    #contact div #root{
-        margin-left: 2rem;
-    }
 }
-
-@media (max-width: 600px){
-    body{
-        background: var(--bgbody);
-        overflow-x: hidden;
-        max-width: 768px;
-        width: 600px;
-    }
+@media (max-width: 414px){
     header{
-        display:flex;
-        line-height: 3rem;
-        background: url(images/blob-scatter-haikei\ \(1\).svg);
-        background-repeat: no-repeat, no-repeat;
-        background-size: cover;
-        width: 550px;
-        overflow: hidden;
+        width:100% !important;
     }
     header nav{
-        /* background:var(--bgsecondary) !important; */
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 505px !important;
-        height: 50px;
-        position: fixed;
-        font-weight: bolder;
-        z-index: 999;
-        overflow: hidden;
-    
+        width: 375px !important;
     }
-    header nav p{
-        color:#fff;
-        font-size: 2rem;
-        font-weight: bolder;
-        margin:1.5rem 1.5rem 1.5rem -1.5rem !important;
-    }
-    header nav .container {
-        max-width: 992px;
-        margin: 0 auto;
-    } 
     header nav .container ul {
-        list-style: none;
-        display: flex;
-        margin-left: 1.9rem;
-    }
-    
-    header nav .container ul li {
-        margin: .5rem;
-        font-size: 1rem;
-    }
-    
-    header nav .container ul li a {
-        color: white;
-        text-decoration: none;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-    }
-    header nav .container ul li a:hover {
-        color:var(--butonD)
-    }
-    header nav .container ul li a p{
-        display:none
-    }
-    header .header__intro{
-        padding: 0 0 0 5rem;
-        display:block;
-        max-width: 100rem;
-        overflow: hidden;
+        margin-left: 15%;
     }
     header .header__intro  .header__text{
-        margin-top: 5rem;
-    }
-    header .header__intro .header__text h1{
-        color:var(--colorprimary) !important;
-        font-size: 2.5rem;
-        margin: 1.2rem 0 0 -4rem ;
-    }
-    header .header__intro .header__text h1 div{
-        font-size: 6.5rem;
-        line-height: 6rem;
-    }
-    header .header__intro .header__text p{
-        font-size: 1.7rem;
-        margin: 0 0 0 -4rem ;
-    }
-    header .header__intro .header__text div button{
-        background: var(--buton);
-        color:#fff;
-        padding: .8rem;
-        font-size: 1.5rem;
-        font-weight: bold;
-        border:var(--buton) .2px solid;
-        border-radius: 2rem;
-        margin: 1rem 0 0 -4rem ;
-        transition: 1s ease-in-out;
-    
-    }
-    header .header__intro .header__text div button:hover{
-        background: var(--butonD);
-    }
-    button + button{
-        margin-left: .1rem !important;
+        margin-top: 6rem;
     }
     header .header__intro img{
-        width:70%;
+        width:80%;
         position:relative;
-        margin-top: 1.5rem !important;
+        margin-top: 1rem;
     }
     .obscure{
-        position:absolute; 
-        background:var(--bgsecondary); 
-        width:17rem; 
-        height: 17rem; 
-        border:#ff8a04 10px solid;
-        border-radius: 100%; 
+        width:13rem; 
+        height: 13rem; 
         margin: 3rem 0 0 2rem;
     }
     #services{
-        width:440px !important;
-        height:65vh;
+        width:300px !important;
+        height:45vh;
         display:block;
         padding: 2rem 5rem 0 2rem;
         background: #fff;
-        margin-top: -3.2rem;
+        margin-top: -1.2rem;
         overflow: hidden;
         
     }
     #services .service{
-        width: 25rem;
-        background: #eb7e02;
-        padding: .1rem 2rem 2rem 6rem;
-        border-radius: 0 5rem 5rem 0 ;
-        margin-left: -6rem;
-        overflow: hidden;
-    }
-    #services .service p{
-        color:#016306;
-        font-weight: bolder;
-        font-size: 2rem;
-        margin-top: 2.5rem;
-        text-decoration: underline;
-        overflow: hidden;
-    }
-    #services .service h1{
-        font-size: 2rem;
-        font-weight: bolder;
-        color:#fff;
-        overflow: hidden;
+        padding: .1rem 1rem 2rem 6rem;
     }
     #services #control{
-        overflow: scroll;
-        width:31rem;
-        height:35vh;
+        width:120%;
+        margin-top: -6rem;
     }
     #services .swiper{
-        margin-left: -.5rem;
+        margin-left: -2rem !important;
     }
     #services .swiper .swiper-wrapper .swiper-slide{
-        width: 30rem !important;
-        height:20rem !important;
-        padding:1rem 1rem 1rem 0rem !important;
-        margin:0 !important;
+        width: 80% !important;
+        height:30rem !important;
+        padding:1rem;
+        margin:0 0 0 3rem !important;
         overflow: hidden;
-        
     }
     #services .swiper .swiper-wrapper .swiper-slide .image{
-        padding-left: 12rem;
+        padding-left: 6rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image img{
         border-radius: 100%;
         width: 7rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .caption{
-        text-align: center;
-        font-weight: bold;
-        /* margin-top: 2rem; */
-        color:rgb(85, 84, 84);
-        font-size: .9rem;
+        font-size: 1rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .caption h1{
-        color:#eb7e02;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
      
         display:none;
 
     }
-    #myworks{
-        margin-top:0rem;
-        background-image: url('images/Screenshot\ \(161\).png');
-        /* overflow:scroll; */
-        width:550px !important;
-        height:110vh;
-        overflow: hidden;
-    }
-    h2{
-        text-align: center;
-        background:var(--bgprimary);
-        color:#fff;
-        padding: .6rem;
-    }
-    #myworks .works{
-        width:100%;
-        background-color: rgba(0,0,0,80%);
-        height:120vh
-    }
-    #myworks .works .workz{
-        width:80%;
-        height: 100vh;
-        margin:20px auto;
-        padding: 0 auto;
-        display: grid;
-        overflow:scroll;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    }
-    #myworks .works .workz .work{
-        width: 90%;
-        height: 20rem;
-        border: var(--bgprimary) 2px solid;
-        border-radius: 2rem ;
-        margin: 10px;
-        /* overflow: hidden; */
-    }
-    #myworks .works .workz .work img{
-        width:30rem;
-        height:20rem;
-        transition: 2s ease-in-out;
-        cursor:pointer;
-        
-    }
-    #myworks .works .workz .work img:hover{
-        width:32rem;
-        margin-left: -1rem;
-        margin-top: -1rem;
-        height: 21rem;
-    }
-    .work + .work{
-        margin-left: 10rem;
-    }
     #capabilities{
-        width:550px;
+        width:100%;
         height:35rem;
-        /* padding: 2rem 0 2rem 2rem; */
-        /* background: #fff; */
         overflow: hidden;
     }
     #capabilities form{
         width:40rem !important;
         display:block;
-        /* grid-template-columns: repeat(2,1fr); */
-        padding:2rem 0 2rem 0;
+        padding:2rem 0 2rem 1rem;
         max-width: 90%;
         margin-top: .2rem;
         line-height: .5rem;
@@ -1268,30 +1732,20 @@ h2{
     #capabilities form label{
         width:90%;
         margin-top: 1rem;
-        /* height:2rem */
     }
     
     #capabilities form label ul li{
         font-size: 1rem;
         font-weight: bold;
         display:grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 80% 20%;
     }
     #capabilities form label ul li span{
-        /* margin-left: 13rem; */
         text-align: end;
-        font-size:1.2rem;
+        font-size:1rem;
         color:var(--buton)
     }
-    #capabilities form label input{
-        width:100%;
-        max-height: 1rem;
-        -webkit-appearance:button;
-        background-color: green;
-        accent-color:orange;  
-        -webkit-appearance: none; 
-        -moz-appearance: none;
-    }
+  
     .noInteraction{
         width: 100%; 
         height:30rem; 
@@ -1300,33 +1754,97 @@ h2{
         margin-top: -29rem !important;
     }
     #contact{
-        display: block;
-        /* grid-template-columns: repeat(2, 1fr); */
-        background: #fff;
-        overflow:hidden;
-        border-radius: 3rem 2rem 0 0;
-        border-top: 2px solid var(--bgprimary);
-        width:550px;
+        width:100%;
         
-    }
-    #contact div img{
-        margin-left:16rem;
-        position:relative;
-        width:60%;
-        margin-top: 3rem;
-        position:relative;
-        border-radius:0 10% 10% 10% ;
-        box-shadow: var(--bgprimary) 10px 10px 10px;
-        transition: 2.5s ease-in-out;
-        display:none
-    }
-    #contact div img:hover{
-        box-shadow: var(--bgbody) 10px 10px 15px;
     }
     #contact div h2{
         margin: 2rem;
+    }   
+}
+@media (max-width:390px){
+    header nav{
+        width: 350px !important;
     }
-    #contact div #root{
-        margin-left: 2rem;
+    header nav p{
+        color:#fff;
+        font-size: 1.2rem;
+        font-weight: bolder;
+        padding:0rem;
+        margin-left:0;
+    }
+    header .header__intro  .header__text{
+        margin-top: 8rem;
+    }
+    .obscure{
+        width:13rem; 
+        height: 12rem; 
+        margin: 3rem 0 0 1rem;
+    }
+    #services{
+        width:280px !important;
+        height:45vh;
+        display:block;
+        padding: 2rem 5rem 0 2rem;
+        background: #fff;
+        margin-top: -1.2rem;
+        overflow: hidden;
+        
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image{
+        padding-left: 5rem;
+    }
+}
+@media (max-width:375px){
+    header nav{
+        width: 340px !important;
+    }
+    header .header__intro .header__text h1 div{
+        font-size: 4rem;
+    }
+    header .header__intro .header__text p{
+        font-size: 1.5rem;
+    }
+    #services{
+        width:265px !important;
+        height:45vh;
+        display:block;
+        padding: 2rem 5rem 0 2rem;
+        background: #fff;
+        margin-top: -1.2rem;
+        overflow: hidden;
+        
+    }
+}
+@media (max-width:320px){
+    header nav{
+        width: 280px !important;
+    }
+    header nav p{
+        color:#fff;
+        font-size: 1rem;
+        padding:0rem;
+        margin-left:0rem;
+    }
+    header nav .container ul li {
+        padding:1rem;
+        font-size: .7rem;
+    }
+    header .header__intro .header__text h1{
+        font-size: 1.5rem;
+    }
+    .obscure{
+        width:9rem; 
+        height: 9rem; 
+        margin: 3rem 0 0 1rem;
+    }
+    #services{
+        width:210px !important;
+        height:45vh;
+        display:block;
+        padding: 2rem 5rem 0 2rem;
+        background: #fff;
+        margin-top: -1.2rem;
+        overflow: hidden;
+        
     }
 }
