@@ -30,7 +30,6 @@ header{
     background-size: cover;
 }
 header nav{
-    /* background:var(--bgsecondary) !important; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +96,6 @@ header .header__intro .header__text h1{
 header .header__intro .header__text h1 div{
     color:var(--colorprimary) !important;
     font-size: 5rem;
-    /* margin-top:-10rem !important; */
 }
 header .header__intro .header__text p{
     font-size: 2rem;
@@ -130,7 +128,6 @@ header .header__intro img{
     background:var(--bgsecondary); 
     width:33%; 
     height: 55vh; 
-    /* z-index: -1;  */
     border:#ff8a04 10px solid;
     border-radius: 100%; 
     margin: 3rem 0 0 45rem;
@@ -139,7 +136,6 @@ header .header__intro img{
 #services{
     width:90%;
     height:40vh;
-    /* display:flex; */
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 2rem 5rem 0 5rem;
@@ -172,7 +168,6 @@ header .header__intro img{
     margin:1.2rem;
 }
 #services .swiper .swiper-wrapper .swiper-slide .image{
-    /* background:#eb7e02; */
     padding-left: 8rem;
 }
 #services .swiper .swiper-wrapper .swiper-slide .image img{
@@ -182,7 +177,6 @@ header .header__intro img{
 #services .swiper .swiper-wrapper .swiper-slide .caption{
     text-align: center;
     font-weight: bold;
-    /* margin-top: 2rem; */
     color:rgb(85, 84, 84);
     font-size: .9rem;
 }
@@ -195,57 +189,10 @@ header .header__intro img{
     color:#eb7e02;
     font-weight: bolder;
 }
-/* #about{
-    width: 100%;
-    height:50vh;
-    padding-top: 6.5rem;
-} */
-/* #about svg{
-    position:absolute;
-    z-index: -1;
-    width:100%;
-} */
-/* #about h2{
-    text-align: center;
-    background:var(--bgprimary);
-    color:#fff;
-    padding: .6rem;
-    z-index: -1;
+#for__mobile{
+    display:none;
 }
-#about .about-content{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding:2rem;
-    
-}
-.about-content__div + .about-content__div{
-    padding-left: 3rem;
-}
-#about .about-content .about-content__div img{
-    margin-top: -9rem;
-    z-index: 999;
-    box-shadow: var(--bgprimary) -10px 10px 10px;
-    transition: 2s ease-in-out;
-}
-#about .about-content .about-content__div img:hover{
-    box-shadow: var(--bgbody) -10px 10px 10px;
-    transform: rotate(-10deg);
-}
-#about .about-content .about-content__div p{
-    font-size: 1.05rem;
-    font-weight: bold;
-    color:var(--colorprimary);
-    text-align: justify;
-    width:80%;
-    margin-left: 5rem;
-} */
-
-/* #services{
-    background: var(--bgprimary);
-} */
-
 #myworks{
-    /* margin-top:2rem; */
     background-image: url('images/Screenshot\ \(161\).png');
     overflow: hidden;
 }
@@ -296,9 +243,6 @@ h2{
 #capabilities{
     width:100%;
     height:24rem;
-    /* padding: 2rem 0 2rem 2rem; */
-    /* background: #fff; */
-    
 }
 #capabilities form{
     width:400rem !important;
@@ -313,7 +257,6 @@ h2{
 #capabilities form label{
     width:90%;
     margin-top: 1rem;
-    /* height:2rem */
 }
 
 #capabilities form label ul li{
@@ -323,7 +266,6 @@ h2{
     grid-template-columns: 60% 40%;
 }
 #capabilities form label ul li span{
-    /* margin-left: 13rem; */
     text-align: end;
     font-size:1.2rem;
     color:var(--buton)
@@ -397,7 +339,6 @@ footer div a{
         width:1280px !important;
     }
     header nav{
-        /* background:var(--bgsecondary) !important; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -464,7 +405,6 @@ footer div a{
     header .header__intro .header__text h1 div{
         color:var(--colorprimary) !important;
         font-size: 5rem;
-        /* margin-top:-10rem !important; */
     }
     header .header__intro .header__text p{
         font-size: 2rem;
@@ -497,7 +437,6 @@ footer div a{
         background:var(--bgsecondary); 
         width:28%; 
         height: 45vh; 
-        /* z-index: -1;  */
         border:#ff8a04 10px solid;
         border-radius: 100%; 
         margin: 3rem 0 0 39rem;
@@ -506,7 +445,6 @@ footer div a{
     #services{
         width:90%;
         height:40vh;
-        /* display:flex; */
         display: grid;
         grid-template-columns: 30% 72%;
         padding: 2rem 5rem 0 5rem;
@@ -540,7 +478,6 @@ footer div a{
         margin:1.2rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image{
-        /* background:#eb7e02; */
         padding-left: 8rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image img{
@@ -550,7 +487,6 @@ footer div a{
     #services .swiper .swiper-wrapper .swiper-slide .caption{
         text-align: center;
         font-weight: bold;
-        /* margin-top: 2rem; */
         color:rgb(85, 84, 84);
         font-size: .9rem;
     }
@@ -564,7 +500,6 @@ footer div a{
         font-weight: bolder;
     }
     #myworks{
-        /* margin-top:2rem; */
         background-image: url('images/Screenshot\ \(161\).png');
         overflow: hidden;
     }
@@ -615,9 +550,6 @@ footer div a{
     #capabilities{
         width:100%;
         height:24rem;
-        /* padding: 2rem 0 2rem 2rem; */
-        /* background: #fff; */
-        
     }
     #capabilities form{
         width:400rem !important;
@@ -632,7 +564,6 @@ footer div a{
     #capabilities form label{
         width:90%;
         margin-top: 1rem;
-        /* height:2rem */
     }
     
     #capabilities form label ul li{
@@ -642,7 +573,6 @@ footer div a{
         grid-template-columns: 60% 40%;
     }
     #capabilities form label ul li span{
-        /* margin-left: 13rem; */
         text-align: end;
         font-size:1.2rem;
         color:var(--buton)
@@ -707,7 +637,6 @@ footer div a{
         width:1024px !important;
     }
     header nav{
-        /* background:var(--bgsecondary) !important; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -774,7 +703,6 @@ footer div a{
     header .header__intro .header__text h1 div{
         color:var(--colorprimary) !important;
         font-size: 4rem;
-        /* margin-top:-10rem !important; */
     }
     header .header__intro .header__text p{
         font-size: 2rem;
@@ -808,7 +736,6 @@ footer div a{
         background:var(--bgsecondary); 
         width:28%; 
         height: 45vh; 
-        /* z-index: -1;  */
         border:#ff8a04 10px solid;
         border-radius: 100%; 
         margin: 12rem 0 0 30rem;
@@ -817,7 +744,6 @@ footer div a{
     #services{
         width:865px;
         height:58vh;
-        /* display:flex; */
         display: grid;
         grid-template-columns: 40% 65%;
         padding: 2rem 5rem 0 5rem;
@@ -852,7 +778,6 @@ footer div a{
         margin:1.2rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image{
-        /* background:#eb7e02; */
         padding-left: 4rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image img{
@@ -862,7 +787,6 @@ footer div a{
     #services .swiper .swiper-wrapper .swiper-slide .caption{
         text-align: center;
         font-weight: bold;
-        /* margin-top: 2rem; */
         color:rgb(85, 84, 84);
         font-size: .9rem;
     }
@@ -876,7 +800,6 @@ footer div a{
         font-weight: bolder;
     }
     #myworks{
-        /* margin-top:2rem; */
         background-image: url('images/Screenshot\ \(161\).png');
         overflow: hidden;
     }
@@ -927,9 +850,6 @@ footer div a{
     #capabilities{
         width:1024px;
         height:24rem;
-        /* padding: 2rem 0 2rem 2rem; */
-        /* background: #fff; */
-        
     }
     #capabilities form{
         width:400rem !important;
@@ -944,7 +864,6 @@ footer div a{
     #capabilities form label{
         width:90%;
         margin-top: 1rem;
-        /* height:2rem */
     }
     
     #capabilities form label ul li{
@@ -954,7 +873,6 @@ footer div a{
         grid-template-columns: 60% 40%;
     }
     #capabilities form label ul li span{
-        /* margin-left: 13rem; */
         text-align: end;
         font-size:1.2rem;
         color:var(--buton)
@@ -1020,7 +938,6 @@ footer div a{
         width:912px !important;
     }
     header nav{
-        /* background:var(--bgsecondary) !important; */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1089,7 +1006,6 @@ footer div a{
     header .header__intro .header__text h1 div{
         color:var(--colorprimary) !important;
         font-size: 4rem;
-        /* margin-top:-10rem !important; */
     }
     header .header__intro .header__text p{
         font-size: 1.5rem;
@@ -1123,7 +1039,6 @@ footer div a{
         background:var(--bgsecondary); 
         width:28%; 
         height: 16vh; 
-        /* z-index: -1;  */
         border:#ff8a04 10px solid;
         border-radius: 100%; 
         margin: 12rem 0 0 27rem;
@@ -1132,7 +1047,6 @@ footer div a{
     #services{
         width:90%;
         height:40vh;
-        /* display:flex; */
         display: block;
         padding: 3rem;
         background: #fff;
@@ -1174,7 +1088,6 @@ footer div a{
         margin:1.2rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image{
-        /* background:#eb7e02; */
         padding-left: 6rem;
     }
     #services .swiper .swiper-wrapper .swiper-slide .image img{
@@ -1184,7 +1097,6 @@ footer div a{
     #services .swiper .swiper-wrapper .swiper-slide .caption{
         text-align: center;
         font-weight: bold;
-        /* margin-top: 2rem; */
         color:rgb(85, 84, 84);
         font-size: 1.5rem;
     }
@@ -1198,7 +1110,6 @@ footer div a{
         font-weight: bolder;
     }
     #myworks{
-        /* margin-top:2rem; */
         background-image: url('images/Screenshot\ \(161\).png');
         overflow: hidden;
     }
@@ -1249,9 +1160,6 @@ footer div a{
     #capabilities{
         width:912px;
         height:24rem;
-        /* padding: 2rem 0 2rem 2rem; */
-        /* background: #fff; */
-        
     }
     #capabilities form{
         width:400rem !important;
@@ -1266,7 +1174,6 @@ footer div a{
     #capabilities form label{
         width:90%;
         margin-top: 1rem;
-        /* height:2rem */
     }
     
     #capabilities form label ul li{
@@ -1409,7 +1316,6 @@ footer div a{
         grid-template-columns: 70% 30%;
     }
     #capabilities form label ul li span{
-        /* margin-left: 13rem; */
         text-align: end;
         font-size:.9rem;
     }
@@ -1517,12 +1423,6 @@ footer div a{
     }
     #services .service{
         padding: .1rem 2rem 2rem 6rem;
-        
-        /* width: 40rem;
-        padding: .1rem 2rem 2rem 6rem;
-        border-radius: 0 5rem 5rem 0 ;
-        margin-left: -6rem;
-        overflow: hidden; */
     }
     #services .service p{
         font-size: 1.2rem !important;
@@ -1537,33 +1437,30 @@ footer div a{
         margin-top: -8rem;
     }
     #services .swiper{
-        margin-left: -2rem !important;
+        display:none
     }
-    #services .swiper .swiper-wrapper .swiper-slide{
-        width: 80% !important;
-        height:20rem !important;
-        padding:1rem;
-        margin:0 0 0 3rem !important;
-        overflow: hidden;
+    #for__mobile{
+        display:block;
+        margin-top: 1rem 2rem;
+        overflow: scroll;
     }
-    #services .swiper .swiper-wrapper .swiper-slide .image{
-        padding-left: 9rem;
+    #for__mobile div{
+        padding:1rem
     }
-    #services .swiper .swiper-wrapper .swiper-slide .image img{
-        border-radius: 100%;
-        width: 7rem;
+    #for__mobile div .image{
+        margin-left: 35%;
+        margin-bottom: -10%;
     }
-    #services .swiper .swiper-wrapper .swiper-slide .caption{
-        font-size: 1rem;
+    #for__mobile div .image img{
+        width:40%;
     }
-    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
-        font-size: 1.5rem;
+    #for__mobile div .caption{
+        text-align: center;
     }
-    #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
-     
-        display:none;
+    #for__mobile div .caption h1{
+        color: var(--bgsecondary)
+    }
 
-    }
     #myworks{
         height:110vh;
     }
@@ -1593,7 +1490,6 @@ footer div a{
         border: var(--bgprimary) 2px solid;
         border-radius: 2rem ;
         margin: 10px;
-        /* overflow: hidden; */
     }
     #myworks .works .workz .work img{
         width:30rem;
@@ -1697,34 +1593,6 @@ footer div a{
         width:120%;
         margin-top: -6rem;
     }
-    #services .swiper{
-        margin-left: -2rem !important;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide{
-        width: 80% !important;
-        height:30rem !important;
-        padding:1rem;
-        margin:0 0 0 3rem !important;
-        overflow: hidden;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide .image{
-        padding-left: 6rem;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide .image img{
-        border-radius: 100%;
-        width: 7rem;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide .caption{
-        font-size: 1rem;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
-        font-size: 1.5rem;
-    }
-    #services .swiper  .swiper-button-prev, #services .swiper  .swiper-button-next{
-     
-        display:none;
-
-    }
     #capabilities{
         width:100%;
         height:35rem;
@@ -1800,9 +1668,6 @@ footer div a{
         overflow: hidden;
         
     }
-    #services .swiper .swiper-wrapper .swiper-slide .image{
-        padding-left: 5rem;
-    }
 }
 @media (max-width:375px){
     header nav{
@@ -1862,31 +1727,7 @@ footer div a{
         height:40vh;
         margin-top: -2rem;
     }
-      #services .swiper{
-        margin-left: -3rem !important;
-        width:110%;
-    }
-     /* #services .swiper .swiper-wrapper .swiper-slide{
-        width: 80% !important;
-        height:20rem !important;
-        padding:1rem;
-        margin:0 0 0 3rem !important;
-        overflow: hidden;
-    } */
-    #services .swiper .swiper-wrapper .swiper-slide .image{
-        padding-left: 5.5rem;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide .image img{
-        border-radius: 100%;
-        width: 4rem;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
-        font-size: 1rem;
-    }
-    #services .swiper .swiper-wrapper .swiper-slide .caption{
-        font-size: .8rem;
-    }
-    #myworks .works .workz{
+        #myworks .works .workz{
         width:100%;
         height: 100vh;
         margin:20px auto;
