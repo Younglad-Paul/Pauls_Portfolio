@@ -1849,12 +1849,59 @@ footer div a{
     }
     #services{
         width:210px !important;
-        height:45vh;
+        height:65vh;
         display:block;
         padding: 2rem 5rem 0 2rem;
         background: #fff;
         margin-top: -1.2rem;
         overflow: hidden;
         
+    }
+     #services #control{
+        width:130%;
+        height:40vh;
+        margin-top: -2rem;
+    }
+      #services .swiper{
+        margin-left: -3rem !important;
+        width:110%;
+    }
+     /* #services .swiper .swiper-wrapper .swiper-slide{
+        width: 80% !important;
+        height:20rem !important;
+        padding:1rem;
+        margin:0 0 0 3rem !important;
+        overflow: hidden;
+    } */
+    #services .swiper .swiper-wrapper .swiper-slide .image{
+        padding-left: 5.5rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .image img{
+        border-radius: 100%;
+        width: 4rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption h1{
+        font-size: 1rem;
+    }
+    #services .swiper .swiper-wrapper .swiper-slide .caption{
+        font-size: .8rem;
+    }
+    #myworks .works .workz{
+        width:100%;
+        height: 100vh;
+        margin:20px auto;
+    }
+    #myworks .works .workz .work{
+        width: 90%;
+        height: 15rem;
+        
+    }
+    #myworks .works .workz .work img{
+        width:20rem;
+        height:15rem;
+    }
+    #myworks .works .workz .work img:hover{
+        width:22rem;
+        height: 16rem;
     }
 }
