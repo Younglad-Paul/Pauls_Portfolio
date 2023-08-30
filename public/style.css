@@ -1441,7 +1441,7 @@ footer div a{
     }
     #for__mobile{
         display:block;
-        margin-top: 1rem 2rem;
+        margin: 1rem 1rem 2rem 1rem;
         overflow: scroll;
     }
     #for__mobile div{
@@ -1452,6 +1452,7 @@ footer div a{
         margin-bottom: -10%;
     }
     #for__mobile div .image img{
+        border-radius: 100%;
         width:40%;
     }
     #for__mobile div .caption{
