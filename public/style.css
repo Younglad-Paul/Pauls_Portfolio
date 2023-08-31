@@ -50,7 +50,7 @@ a{
     --buton:#016306;
 }
 body{
-    background: #000;
+    background: var(--bgprimary) !important;
     overflow-x: hidden;
     max-width: 100%;
 }
