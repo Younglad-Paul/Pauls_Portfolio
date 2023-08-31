@@ -1,3 +1,35 @@
+.details{
+    width:90%;
+    height:50vh;
+    font-size: 75%;
+    padding: 5%;
+    background: var(--bgsecondary);
+    position:relative;
+    text-align: center;
+    border: 2px solid var(--butonD);
+    border-radius: 5% 5% 0 0;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
+.details h3{
+    color: var(--buton)
+}
+.details a button{
+    background: var(--buton);
+    color:#fff;
+    width:20%;
+    font-weight: bold;
+    border-radius:20px;
+    border: 1px solid var(--buton);
+    margin-top: 5px;
+}
+.details a button:hover{
+    background: var(--butonD);
+}
+.snippet{
+    margin-top: -60%;
+}
+
 *{
     margin:0;
     padding:0;
@@ -547,6 +579,9 @@ footer div a{
     .work + .work{
         margin-left: 10rem;
     }
+    .snippet{
+        margin-top: -75%;
+    }
     #capabilities{
         width:100%;
         height:24rem;
@@ -846,6 +881,9 @@ footer div a{
     }
     .work + .work{
         margin-left: 10rem;
+    }
+    .snippet{
+        margin-top: -60%;
     }
     #capabilities{
         width:1024px;
@@ -1157,6 +1195,9 @@ footer div a{
     .work + .work{
         margin-left: 10rem;
     }
+    .snippet{
+        margin-top: -75%;
+    }
     #capabilities{
         width:912px;
         height:24rem;
@@ -1254,6 +1295,9 @@ footer div a{
     #services #control{
         margin-top: -11rem;
     }
+    .snippet{
+        margin-top: -79%;
+    }
     #capabilities{
         width:820px;
     }
@@ -1306,6 +1350,9 @@ footer div a{
     }
     #myworks .works .workz .work img:hover{
         width:40rem;
+    }
+    .snippet{
+        margin-top: -35%;
     }
     #capabilities{
         width:768px;
@@ -1508,6 +1555,9 @@ footer div a{
     .work + .work{
         margin-left: 10rem;
     }
+    .snippet{
+        margin-top: -55%;
+    }
     #capabilities{
         width:540px;
         height:35rem;
@@ -1594,6 +1644,9 @@ footer div a{
         width:120%;
         margin-top: -6rem;
     }
+    .snippet{
+        margin-top: -75%;
+    }
     #capabilities{
         width:100%;
         height:35rem;
@@ -1669,6 +1722,9 @@ footer div a{
         overflow: hidden;
         
     }
+    .snippet{
+        margin-top: -85%;
+    }
 }
 @media (max-width:375px){
     header nav{
@@ -1733,9 +1789,12 @@ footer div a{
         height:40vh;
         margin-top: -2rem;
     }
-        #myworks .works .workz{
+    #myworks{
+        height:130vh !important
+    }
+    #myworks .works .workz{
         width:100%;
-        height: 100vh;
+        height: 130vh;
         margin:20px auto;
     }
     #myworks .works .workz .work{
@@ -1750,5 +1809,11 @@ footer div a{
     #myworks .works .workz .work img:hover{
         width:22rem;
         height: 16rem;
+    }
+    .details{
+        font-size: 65%;
+    }       
+    .snippet{
+        margin-top: -75%;
     }
 }
