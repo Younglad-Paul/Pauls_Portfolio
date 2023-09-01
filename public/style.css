@@ -29,7 +29,6 @@
 .snippet{
     margin-top: -60%;
 }
-
 *{
     margin:0;
     padding:0;
@@ -300,7 +299,7 @@ h2{
 #capabilities form label ul li span{
     text-align: end;
     font-size:1.2rem;
-    color:var(--buton)
+    color:var(--buton);
 }
 #capabilities form label input{
     width:100%;
@@ -384,6 +383,9 @@ footer{
     background: var(--bgsecondary);
     text-align: center;
     color:#016306;
+}
+footer h3{
+    text-decoration: underline;
 }
 footer div a{
     margin:2rem;

@@ -50,3 +50,84 @@ function snippet6(){
 function noSnippet6(){
     detail6.classList.remove("snippet")
 }
+
+function focusing(){
+
+const slide1 = document.querySelector("#slide1")
+const disp1 = document.querySelector("#disp1")
+const slide2 = document.querySelector("#slide2")
+const disp2 = document.querySelector("#disp2")
+const slide3 = document.querySelector("#slide3")
+const disp3 = document.querySelector("#disp3")
+const slide4 = document.querySelector("#slide4")
+const disp4 = document.querySelector("#disp4")
+const slide5 = document.querySelector("#slide5")
+const disp5 = document.querySelector("#disp5")
+const slide6 = document.querySelector("#slide6")
+const disp6 = document.querySelector("#disp6")
+const slide7 = document.querySelector("#slide7")
+const disp7 = document.querySelector("#disp7")
+const slide8 = document.querySelector("#slide8")
+const disp8 = document.querySelector("#disp8")
+
+setInterval(() => {
+    disp1.innerHTML = slide1.value + "%"
+    if(slide1.value < 52){
+        slide1.value++    
+    }
+    disp2.innerHTML = slide2.value + "%"
+    if(slide2.value < 77){
+        slide2.value++    
+    }
+    disp3.innerHTML = slide3.value + "%"
+    if(slide3.value < 81){
+        slide3.value++    
+    }
+    disp4.innerHTML = slide4.value + "%"
+    if(slide4.value < 90){
+        slide4.value++    
+    }
+    disp5.innerHTML = slide5.value + "%"
+    if(slide5.value < 64){
+        slide5.value++    
+    }
+    disp6.innerHTML = slide6.value + "%"
+    if(slide6.value < 49){
+        slide6.value++    
+    }
+    disp7.innerHTML = slide7.value + "%"
+    if(slide7.value < 84){
+        slide7.value++    
+    }
+    disp8.innerHTML = slide8.value + "%"
+    if(slide8.value < 97){
+        slide8.value++    
+    }
+
+}, 35)
+
+}
+// function Unfocusing() {
+//     const slide1 = document.querySelector("#slide1");
+//     const disp1 = document.querySelector("#disp1");
+    
+//     if (slide1.value > 50) {
+//         slide1.value = 0;
+//         disp1.innerHTML = slide1.value + "%";  // Update the displayed value
+//     }
+// }
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            focusing()
+        }
+        // else{
+        //     Unfocusing()
+        // }
+    });
+});
+
+const actionable = document.querySelectorAll("#capabilities");
+actionable.forEach((el) => observer.observe(el));
