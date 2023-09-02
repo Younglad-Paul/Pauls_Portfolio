@@ -110,10 +110,8 @@ setInterval(() => {
 // function Unfocusing() {
 //     const slide1 = document.querySelector("#slide1");
 //     const disp1 = document.querySelector("#disp1");
-    
-//     if (slide1.value > 50) {
+//     if (slide1.value >= 52) {  // Changed the condition to >=
 //         slide1.value = 0;
-//         disp1.innerHTML = slide1.value + "%";  // Update the displayed value
 //     }
 // }
 
@@ -121,10 +119,10 @@ setInterval(() => {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            focusing()
+            focusing();
         }
-        // else{
-        //     Unfocusing()
+        //  else {
+        //     Unfocusing();
         // }
     });
 });
