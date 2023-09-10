@@ -1360,9 +1360,10 @@ footer div a{
     #about .about-content .atMedia{
         display:block;
         border-radius: 100%;
-        width:60%;
+        width:55%;
         height:20vh;
         overflow: hidden;
+        margin-top: -17rem;
     }
     #about .about-content .atMedia img{
         width:120%;
@@ -1373,7 +1374,7 @@ footer div a{
     }
     #about .about-content .about-content__div:nth-child(2){
         border: 2px solid var(--bgprimary);
-        margin-left: -35%;
+        margin-left: -39%;
         width: 130%;
     }
     #about .about-content p{
