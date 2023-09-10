@@ -13,6 +13,17 @@ const detail3 = document.querySelector(".three")
 const detail4 = document.querySelector(".four")
 const detail5 = document.querySelector(".five")
 const detail6 = document.querySelector(".six")
+const detail7 = document.querySelector(".seven")
+const detail8 = document.querySelector(".eight")
+const detail9 = document.querySelector(".nine")
+const workheight = document.querySelector(".workz")
+const moreWork1 = document.querySelector(".moreM1")
+const moreWork2 = document.querySelector(".moreM2")
+const moreWork3 = document.querySelector(".moreM3")
+moreWork1.style.display = "none"
+moreWork2.style.display = "none"
+moreWork3.style.display = "none"
+workheight.style.height = "45rem"
 
 function snippet1(){
     detail1.classList.add("snippet")
@@ -49,6 +60,40 @@ function snippet6(){
 }
 function noSnippet6(){
     detail6.classList.remove("snippet")
+}
+function snippet7(){
+    detail7.classList.add("snippet")
+}
+function noSnippet7(){
+    detail7.classList.remove("snippet")
+}
+function snippet8(){
+    detail8.classList.add("snippet")
+}
+function noSnippet8(){
+    detail8.classList.remove("snippet")
+}
+function snippet9(){
+    detail9.classList.add("snippet")
+}
+function noSnippet9(){
+    detail9.classList.remove("snippet")
+}
+function showMorL(){
+    const MorL = document.querySelector("#showMore")
+    if(moreWork1.style.display == "none"){
+        moreWork1.style.display = "block"
+        moreWork2.style.display = "block"
+        moreWork3.style.display = "block"
+        workheight.style.height = "fit-content"
+        MorL.innerHTML = "Show Less"
+    }else{
+        moreWork1.style.display = "none"
+        moreWork2.style.display = "none"
+        moreWork3.style.display = "none"
+        workheight.style.height = "45rem"
+        MorL.innerHTML = "Show More"
+    }
 }
 
 function focusing(){
