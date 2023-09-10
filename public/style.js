@@ -4,7 +4,6 @@ function DownloadCV() {
     cvLink.download = "BORISADE_DAYO_PAUL_CV.pdf";
     cvLink.click();
 }
-
 // const work = document.querySelector(".work")
 // const detail = document.querySelector(".details")
 const detail1 = document.querySelector(".one")
@@ -25,59 +24,89 @@ moreWork2.style.display = "none"
 moreWork3.style.display = "none"
 workheight.style.height = "45rem"
 
+const img1 = document.querySelector(".img1")
+const img2 = document.querySelector(".img2")
+const img3 = document.querySelector(".img3")
+const img4 = document.querySelector(".img4")
+const img5 = document.querySelector(".img5")
+const img6 = document.querySelector(".img6")
+const img7 = document.querySelector(".img7")
+const img8 = document.querySelector(".img")
+const img9 = document.querySelector(".img9")
+
 function snippet1(){
     detail1.classList.add("snippet")
+    img1.classList.add("bluring")
+
+
 }
 function noSnippet1(){
     detail1.classList.remove("snippet")
+    img1.classList.remove("bluring")
 }
 function snippet2(){
     detail2.classList.add("snippet")
+    img2.classList.add("bluring")
 }
 function noSnippet2(){
     detail2.classList.remove("snippet")
+    img2.classList.remove("bluring")
 }
 function snippet3(){
     detail3.classList.add("snippet")
+    img3.classList.add("bluring")
 }
 function noSnippet3(){
     detail3.classList.remove("snippet")
+    img3.classList.remove("bluring")
 }
 function snippet4(){
     detail4.classList.add("snippet")
+    img4.classList.add("bluring")
 }
 function noSnippet4(){
     detail4.classList.remove("snippet")
+    img4.classList.remove("bluring")
 }
 function snippet5(){
     detail5.classList.add("snippet")
+    img5.classList.add("bluring")
 }
 function noSnippet5(){
     detail5.classList.remove("snippet")
+    img5.classList.remove("bluring")
 }
 function snippet6(){
     detail6.classList.add("snippet")
+    img6.classList.add("bluring")
 }
 function noSnippet6(){
     detail6.classList.remove("snippet")
+    img6.classList.remove("bluring")
 }
 function snippet7(){
     detail7.classList.add("snippet")
+    img7.classList.add("bluring")
 }
 function noSnippet7(){
     detail7.classList.remove("snippet")
+    img7.classList.remove("bluring")
 }
 function snippet8(){
     detail8.classList.add("snippet")
+    img8.classList.add("bluring")
 }
 function noSnippet8(){
     detail8.classList.remove("snippet")
+    img8.classList.remove("bluring")
 }
 function snippet9(){
     detail9.classList.add("snippet")
+    img9.classList.add("bluring")
 }
 function noSnippet9(){
     detail9.classList.remove("snippet")
+    img9.classList.remove("bluring")
 }
 function showMorL(){
     const MorL = document.querySelector("#showMore")
