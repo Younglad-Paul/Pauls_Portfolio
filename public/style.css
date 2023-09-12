@@ -1560,7 +1560,7 @@ footer div a{
     .obscure{
         width:15rem; 
         height: 15rem; 
-        margin: 3rem 0 0 2rem;
+        margin: 4rem 0 0 2rem;
     }
     #services{
         width:430px !important;
@@ -1752,9 +1752,9 @@ footer div a{
         margin-top: 1rem;
     }
     .obscure{
-        width:13rem; 
+        width:12rem; 
         height: 13rem; 
-        margin: 3rem 0 0 2rem;
+        margin: 3rem 0 0 1.5rem;
     }
     #services{
         width:300px !important;
@@ -1847,7 +1847,7 @@ footer div a{
         margin-top: 8rem;
     }
     .obscure{
-        width:13rem; 
+        width:12rem; 
         height: 12rem; 
         margin: 3rem 0 0 1rem;
     }
@@ -1876,9 +1876,9 @@ footer div a{
         font-size: 1.5rem;
     }
      .obscure{
-        width:12rem; 
+        width:11rem; 
         height: 11rem; 
-        margin: 3rem 0 0 1rem;
+        margin: 3rem 0 0 1.5rem;
     }
     #services{
         width:265px !important;
@@ -1909,9 +1909,9 @@ footer div a{
         font-size: 1.5rem;
     }
     .obscure{
-        width:9rem; 
+        width:8rem; 
         height: 9rem; 
-        margin: 3rem 0 0 1rem;
+        margin: 3rem 0 0 1.5rem;
     }
     #services{
         width:210px !important;
@@ -1959,4 +1959,7 @@ footer div a{
     .snippet{
         margin-top: -75%;
     }
+}
+@media (max-width:280px){
+    html{display:none}
 }
