@@ -1716,8 +1716,8 @@ footer div a{
     }
     #about .about-content .about-content__div:nth-child(2){
         border: 2px solid var(--bgprimary);
-        margin-left: 0;
-        width: 100%;
+        margin-left: 1rem;
+        width: 90%;
     }
     #about .about-content p{
         margin:2%;
