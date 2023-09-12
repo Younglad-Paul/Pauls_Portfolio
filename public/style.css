@@ -157,11 +157,11 @@ header .header__intro img{
 .obscure{
     position:absolute; 
     background:var(--bgsecondary); 
-    width:33%; 
-    height: 55vh; 
+    width:28%; 
+    height: 50vh; 
     border:#ff8a04 10px solid;
     border-radius: 100%; 
-    margin: 3rem 0 0 45rem;
+    margin: 5rem 0 0 46rem;
 }
 
 #services{
