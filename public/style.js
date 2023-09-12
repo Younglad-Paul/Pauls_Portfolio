@@ -31,7 +31,7 @@ const img4 = document.querySelector(".img4")
 const img5 = document.querySelector(".img5")
 const img6 = document.querySelector(".img6")
 const img7 = document.querySelector(".img7")
-const img8 = document.querySelector(".img")
+const img8 = document.querySelector(".img8")
 const img9 = document.querySelector(".img9")
 
 function snippet1(){
